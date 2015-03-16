@@ -64,6 +64,7 @@
 		5F2A7F361AB73F12006F5CFB = {
 			isa = PBXGroup;
 			children = (
+				5F2A7F681AB74485006F5CFB /* New Group */,
 				5F2A7F411AB73F12006F5CFB /* ASCIImagination */,
 				5F2A7F5B1AB73F12006F5CFB /* ASCIImaginationTests */,
 				5F2A7F401AB73F12006F5CFB /* Products */,
@@ -119,6 +120,13 @@
 				5F2A7F5D1AB73F12006F5CFB /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5F2A7F681AB74485006F5CFB /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

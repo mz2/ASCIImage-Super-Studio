@@ -12,5 +12,7 @@
 
 @property (readwrite, assign) IBOutlet NSTextView *editorTextArea;
 
+@property (readwrite, assign) IBOutlet NSImageView *previewArea;
+
 @end
 
