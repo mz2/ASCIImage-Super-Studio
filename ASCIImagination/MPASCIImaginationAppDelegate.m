@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Manuscripts.app Limited. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "MPASCIImaginationAppDelegate.h"
 
 @interface AppDelegate ()
 

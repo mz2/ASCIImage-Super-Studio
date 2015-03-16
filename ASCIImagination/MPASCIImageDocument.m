@@ -6,13 +6,13 @@
 //  Copyright (c) 2015 Manuscripts.app Limited. All rights reserved.
 //
 
-#import "Document.h"
+#import "MPASCIImageDocument.h"
 
-@interface Document ()
+@interface MPASCIImageDocument ()
 
 @end
 
-@implementation Document
+@implementation MPASCIImageDocument
 
 - (instancetype)init {
     self = [super init];

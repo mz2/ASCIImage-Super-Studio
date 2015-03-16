@@ -1,0 +1,3 @@
+[submodule "ASCIImage"]
+	path = ASCIImage
+	url = git@github.com:mz2/ASCIImage.git

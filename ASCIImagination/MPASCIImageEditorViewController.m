@@ -6,9 +6,9 @@
 //  Copyright (c) 2015 Manuscripts.app Limited. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "MPASCIImageEditorViewController.h"
 
-@implementation ViewController
+@implementation MPASCIImageEditorViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

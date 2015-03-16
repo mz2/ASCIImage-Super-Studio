@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5F2A7F461AB73F12006F5CFB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2A7F451AB73F12006F5CFB /* AppDelegate.m */; };
+		5F2A7F461AB73F12006F5CFB /* MPASCIImaginationAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2A7F451AB73F12006F5CFB /* MPASCIImaginationAppDelegate.m */; };
 		5F2A7F481AB73F12006F5CFB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2A7F471AB73F12006F5CFB /* main.m */; };
-		5F2A7F4B1AB73F12006F5CFB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2A7F4A1AB73F12006F5CFB /* ViewController.m */; };
-		5F2A7F4E1AB73F12006F5CFB /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2A7F4D1AB73F12006F5CFB /* Document.m */; };
+		5F2A7F4B1AB73F12006F5CFB /* MPASCIImageEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2A7F4A1AB73F12006F5CFB /* MPASCIImageEditorViewController.m */; };
+		5F2A7F4E1AB73F12006F5CFB /* MPASCIImageDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2A7F4D1AB73F12006F5CFB /* MPASCIImageDocument.m */; };
 		5F2A7F501AB73F12006F5CFB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F2A7F4F1AB73F12006F5CFB /* Images.xcassets */; };
 		5F2A7F531AB73F12006F5CFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F2A7F511AB73F12006F5CFB /* Main.storyboard */; };
 		5F2A7F5F1AB73F12006F5CFB /* ASCIImaginationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2A7F5E1AB73F12006F5CFB /* ASCIImaginationTests.m */; };
@@ -29,13 +29,13 @@
 /* Begin PBXFileReference section */
 		5F2A7F3F1AB73F12006F5CFB /* ASCIImagination.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASCIImagination.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F2A7F431AB73F12006F5CFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5F2A7F441AB73F12006F5CFB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		5F2A7F451AB73F12006F5CFB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5F2A7F441AB73F12006F5CFB /* MPASCIImaginationAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPASCIImaginationAppDelegate.h; sourceTree = "<group>"; };
+		5F2A7F451AB73F12006F5CFB /* MPASCIImaginationAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPASCIImaginationAppDelegate.m; sourceTree = "<group>"; };
 		5F2A7F471AB73F12006F5CFB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5F2A7F491AB73F12006F5CFB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5F2A7F4A1AB73F12006F5CFB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		5F2A7F4C1AB73F12006F5CFB /* Document.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Document.h; sourceTree = "<group>"; };
-		5F2A7F4D1AB73F12006F5CFB /* Document.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Document.m; sourceTree = "<group>"; };
+		5F2A7F491AB73F12006F5CFB /* MPASCIImageEditorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPASCIImageEditorViewController.h; sourceTree = "<group>"; };
+		5F2A7F4A1AB73F12006F5CFB /* MPASCIImageEditorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPASCIImageEditorViewController.m; sourceTree = "<group>"; };
+		5F2A7F4C1AB73F12006F5CFB /* MPASCIImageDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPASCIImageDocument.h; sourceTree = "<group>"; };
+		5F2A7F4D1AB73F12006F5CFB /* MPASCIImageDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPASCIImageDocument.m; sourceTree = "<group>"; };
 		5F2A7F4F1AB73F12006F5CFB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5F2A7F521AB73F12006F5CFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5F2A7F581AB73F12006F5CFB /* ASCIImaginationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ASCIImaginationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,12 +82,12 @@
 		5F2A7F411AB73F12006F5CFB /* ASCIImagination */ = {
 			isa = PBXGroup;
 			children = (
-				5F2A7F441AB73F12006F5CFB /* AppDelegate.h */,
-				5F2A7F451AB73F12006F5CFB /* AppDelegate.m */,
-				5F2A7F491AB73F12006F5CFB /* ViewController.h */,
-				5F2A7F4A1AB73F12006F5CFB /* ViewController.m */,
-				5F2A7F4C1AB73F12006F5CFB /* Document.h */,
-				5F2A7F4D1AB73F12006F5CFB /* Document.m */,
+				5F2A7F441AB73F12006F5CFB /* MPASCIImaginationAppDelegate.h */,
+				5F2A7F451AB73F12006F5CFB /* MPASCIImaginationAppDelegate.m */,
+				5F2A7F491AB73F12006F5CFB /* MPASCIImageEditorViewController.h */,
+				5F2A7F4A1AB73F12006F5CFB /* MPASCIImageEditorViewController.m */,
+				5F2A7F4C1AB73F12006F5CFB /* MPASCIImageDocument.h */,
+				5F2A7F4D1AB73F12006F5CFB /* MPASCIImageDocument.m */,
 				5F2A7F4F1AB73F12006F5CFB /* Images.xcassets */,
 				5F2A7F511AB73F12006F5CFB /* Main.storyboard */,
 				5F2A7F421AB73F12006F5CFB /* Supporting Files */,
@@ -220,10 +220,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F2A7F4E1AB73F12006F5CFB /* Document.m in Sources */,
-				5F2A7F4B1AB73F12006F5CFB /* ViewController.m in Sources */,
+				5F2A7F4E1AB73F12006F5CFB /* MPASCIImageDocument.m in Sources */,
+				5F2A7F4B1AB73F12006F5CFB /* MPASCIImageEditorViewController.m in Sources */,
 				5F2A7F481AB73F12006F5CFB /* main.m in Sources */,
-				5F2A7F461AB73F12006F5CFB /* AppDelegate.m in Sources */,
+				5F2A7F461AB73F12006F5CFB /* MPASCIImaginationAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

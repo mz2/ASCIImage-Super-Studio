@@ -8,8 +8,9 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface ViewController : NSViewController
+@interface MPASCIImageEditorViewController : NSViewController <NSTextViewDelegate>
 
+@property (readwrite, assign) IBOutlet NSTextView *editorTextArea;
 
 @end
 

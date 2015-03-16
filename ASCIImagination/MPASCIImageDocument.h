@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface Document : NSDocument
+@interface MPASCIImageDocument : NSDocument
 
 
 @end
