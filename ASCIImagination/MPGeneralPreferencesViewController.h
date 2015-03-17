@@ -10,6 +10,14 @@
 
 #import "MASPreferencesViewController.h"
 
+@class BFColorPickerPopover;
+
 @interface MPGeneralPreferencesViewController : NSViewController <MASPreferencesViewController>
+
+@property (readwrite) IBOutlet BFColorPickerPopover *colorPickerPopover;
+
+@property (readwrite) IBOutlet NSColorWell *colorChoiceButton;
+
+- (IBAction)chooseColour:(id)sender;
 
 @end

@@ -21,12 +21,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do view setup here.
     
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(preferencesDidChange:)
-                                                 name:NSUserDefaultsDidChangeNotification
-                                               object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(preferencesDidChange:)
+                                                 name:NSUserDefaultsDidChangeNotification object:nil];
 }
 
 - (void)preferencesDidChange:(NSNotification *)notification {
@@ -51,9 +48,28 @@
     }
     
     PARImage *img = [PARImage imageWithASCIIRepresentation:asciiStrs contextHandler:^(NSMutableDictionary *context) {
-        context[ASCIIContextLineWidth] = @(1.0);
-        context[ASCIIContextStrokeColor] = [NSColor blackColor];
-        context[ASCIIContextShouldAntialias] = @([[NSUserDefaults standardUserDefaults] boolForKey:@"antialias"]);
+        
+        CGFloat strokeWidth = [[NSUserDefaults standardUserDefaults] floatForKey:@"strokeWidth"];
+        if (strokeWidth <= 0)
+            strokeWidth = 1.0f;
+        
+        context[ASCIIContextLineWidth] = @(strokeWidth);
+        
+        NSData *colorData = [[NSUserDefaults standardUserDefaults] objectForKey:@"strokeColor"];
+        NSColor *color = [NSUnarchiver unarchiveObjectWithData:colorData] ?: [NSColor blackColor];
+        context[ASCIIContextStrokeColor] = color;
+        
+        NSData *fillColorData = [[NSUserDefaults standardUserDefaults] objectForKey:@"fillColor"];
+        
+        if (fillColorData) {
+            NSColor *fillColor = [NSUnarchiver unarchiveObjectWithData:colorData] ?: [NSColor clearColor];
+            context[ASCIIContextFillColor] = fillColor;            
+        }
+
+        context[ASCIIContextShouldClose] = @([[NSUserDefaults standardUserDefaults] boolForKey:@"shouldClose"]);
+        
+        BOOL antialias = [[NSUserDefaults standardUserDefaults] boolForKey:@"antialias"];
+        context[ASCIIContextShouldAntialias] = @(antialias);
     }];
     
     self.previewArea.image = img;

@@ -51,13 +51,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ASCIImagination/MPASCIImagePreviewViewController.m"
-            timestampString = "448247640.972987"
+            filePath = "ASCIImagination/MPGeneralPreferencesViewController.m"
+            timestampString = "448250739.084437"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
-            landmarkName = "-ASCIImageTextViewControllerDidRefresh:"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

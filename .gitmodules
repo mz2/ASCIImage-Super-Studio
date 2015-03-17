@@ -10,3 +10,6 @@
 [submodule "External/MASPreferences"]
 	path = External/MASPreferences
 	url = git@github.com:mz2/MASPreferences.git
+[submodule "External/BFColorPickerPopover"]
+	path = External/BFColorPickerPopover
+	url = git@github.com:mz2/BFColorPickerPopover.git
