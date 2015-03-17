@@ -15,6 +15,7 @@
 		5F01B7BD1AB7BD4700EB02F4 /* BFColorPickerPopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F01B7B81AB7BD4700EB02F4 /* BFColorPickerPopoverView.m */; };
 		5F01B7BE1AB7BD4700EB02F4 /* BFColorPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F01B7BA1AB7BD4700EB02F4 /* BFColorPickerViewController.m */; };
 		5F01B7BF1AB7BD4700EB02F4 /* BFIconTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F01B7BC1AB7BD4700EB02F4 /* BFIconTabBar.m */; };
+		5F01B7C21AB84FBD00EB02F4 /* MPASCIImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F01B7C11AB84FBD00EB02F4 /* MPASCIImageView.m */; };
 		5F2A7F461AB73F12006F5CFB /* MPASCIImaginationAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2A7F451AB73F12006F5CFB /* MPASCIImaginationAppDelegate.m */; };
 		5F2A7F481AB73F12006F5CFB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2A7F471AB73F12006F5CFB /* main.m */; };
 		5F2A7F4B1AB73F12006F5CFB /* MPASCIImageEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2A7F4A1AB73F12006F5CFB /* MPASCIImageEditorViewController.m */; };
@@ -59,6 +60,8 @@
 		5F01B7BA1AB7BD4700EB02F4 /* BFColorPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BFColorPickerViewController.m; path = "External/BFColorPickerPopover/BFColorPickerPopover/Helper Classes/BFColorPickerViewController.m"; sourceTree = "<group>"; };
 		5F01B7BB1AB7BD4700EB02F4 /* BFIconTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BFIconTabBar.h; path = "External/BFColorPickerPopover/BFColorPickerPopover/Helper Classes/BFIconTabBar.h"; sourceTree = "<group>"; };
 		5F01B7BC1AB7BD4700EB02F4 /* BFIconTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BFIconTabBar.m; path = "External/BFColorPickerPopover/BFColorPickerPopover/Helper Classes/BFIconTabBar.m"; sourceTree = "<group>"; };
+		5F01B7C01AB84FBD00EB02F4 /* MPASCIImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPASCIImageView.h; sourceTree = "<group>"; };
+		5F01B7C11AB84FBD00EB02F4 /* MPASCIImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPASCIImageView.m; sourceTree = "<group>"; };
 		5F2A7F3F1AB73F12006F5CFB /* ASCIImagination.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASCIImagination.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F2A7F431AB73F12006F5CFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F2A7F441AB73F12006F5CFB /* MPASCIImaginationAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPASCIImaginationAppDelegate.h; sourceTree = "<group>"; };
@@ -174,6 +177,8 @@
 				5F7A915B1AB7B679001E88DD /* MPGeneralPreferencesViewController.h */,
 				5F7A915C1AB7B679001E88DD /* MPGeneralPreferencesViewController.m */,
 				5F7A915D1AB7B679001E88DD /* MPGeneralPreferencesViewController.xib */,
+				5F01B7C01AB84FBD00EB02F4 /* MPASCIImageView.h */,
+				5F01B7C11AB84FBD00EB02F4 /* MPASCIImageView.m */,
 			);
 			path = ASCIImagination;
 			sourceTree = "<group>";
@@ -318,6 +323,7 @@
 			files = (
 				5F01B7BD1AB7BD4700EB02F4 /* BFColorPickerPopoverView.m in Sources */,
 				5F01B7BE1AB7BD4700EB02F4 /* BFColorPickerViewController.m in Sources */,
+				5F01B7C21AB84FBD00EB02F4 /* MPASCIImageView.m in Sources */,
 				5F7A91491AB7461B001E88DD /* MPASCIImageTextViewController.m in Sources */,
 				5F01B7B51AB7BD3F00EB02F4 /* NSColorPanel+BFColorPickerPopover.m in Sources */,
 				5F01B7B41AB7BD3F00EB02F4 /* NSColor+BFColorPickerPopover.m in Sources */,

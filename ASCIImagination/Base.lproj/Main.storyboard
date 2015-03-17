@@ -917,7 +917,7 @@ Cg
                         <rect key="frame" x="0.0" y="0.0" width="300" height="204"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QXj-DK-GI6">
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QXj-DK-GI6" customClass="MPASCIImageView">
                                 <rect key="frame" x="0.0" y="0.0" width="300" height="204"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" priority="500" constant="300" id="eWb-Ej-Je0"/>
