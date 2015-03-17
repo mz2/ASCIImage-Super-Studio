@@ -8,12 +8,21 @@
 
 #import "MPASCIImageEditorViewController.h"
 
+#import "MPASCIImageTextViewController.h"
+#import "MPASCIImagePreviewViewController.h"
+
 @implementation MPASCIImageEditorViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    // Do any additional setup after loading the view.
+    NSSplitViewItem *editorAreaItem = self.splitViewItems[0]; NSParameterAssert(editorAreaItem.viewController);
+    NSSplitViewItem *previewAreawItem = self.splitViewItems[1]; NSParameterAssert(previewAreawItem.viewController);
+    
+    self.textViewController = (id)editorAreaItem.viewController;
+    self.previewViewController = (id)previewAreawItem.viewController;
+    self.textViewController.delegate = self.previewViewController;
+    self.previewViewController.textViewController = self.textViewController;
 }
 
 - (void)setRepresentedObject:(id)representedObject {

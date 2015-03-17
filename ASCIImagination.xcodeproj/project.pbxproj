@@ -14,6 +14,14 @@
 		5F2A7F501AB73F12006F5CFB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F2A7F4F1AB73F12006F5CFB /* Images.xcassets */; };
 		5F2A7F531AB73F12006F5CFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F2A7F511AB73F12006F5CFB /* Main.storyboard */; };
 		5F2A7F5F1AB73F12006F5CFB /* ASCIImaginationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2A7F5E1AB73F12006F5CFB /* ASCIImaginationTests.m */; };
+		5F7A91451AB745D4001E88DD /* MPASCIImagePreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7A91441AB745D4001E88DD /* MPASCIImagePreviewViewController.m */; };
+		5F7A91491AB7461B001E88DD /* MPASCIImageTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7A91471AB7461B001E88DD /* MPASCIImageTextViewController.m */; };
+		5F7A91501AB7591E001E88DD /* PARImage+ASCIIInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7A914F1AB7591E001E88DD /* PARImage+ASCIIInput.m */; };
+		5F7A91531AB75EE0001E88DD /* NSString+ASCII.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7A91521AB75EE0001E88DD /* NSString+ASCII.m */; };
+		5F7A91581AB7B604001E88DD /* MASPreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F7A91551AB7B604001E88DD /* MASPreferencesWindow.xib */; };
+		5F7A91591AB7B604001E88DD /* MASPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7A91571AB7B604001E88DD /* MASPreferencesWindowController.m */; };
+		5F7A915E1AB7B679001E88DD /* MPGeneralPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7A915C1AB7B679001E88DD /* MPGeneralPreferencesViewController.m */; };
+		5F7A915F1AB7B679001E88DD /* MPGeneralPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F7A915D1AB7B679001E88DD /* MPGeneralPreferencesViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +49,21 @@
 		5F2A7F581AB73F12006F5CFB /* ASCIImaginationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ASCIImaginationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F2A7F5D1AB73F12006F5CFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F2A7F5E1AB73F12006F5CFB /* ASCIImaginationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASCIImaginationTests.m; sourceTree = "<group>"; };
+		5F7A91431AB745D4001E88DD /* MPASCIImagePreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPASCIImagePreviewViewController.h; sourceTree = "<group>"; };
+		5F7A91441AB745D4001E88DD /* MPASCIImagePreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPASCIImagePreviewViewController.m; sourceTree = "<group>"; };
+		5F7A91461AB7461B001E88DD /* MPASCIImageTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPASCIImageTextViewController.h; sourceTree = "<group>"; };
+		5F7A91471AB7461B001E88DD /* MPASCIImageTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPASCIImageTextViewController.m; sourceTree = "<group>"; };
+		5F7A914E1AB7591E001E88DD /* PARImage+ASCIIInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "PARImage+ASCIIInput.h"; path = "External/ASCIImage/Core/PARImage+ASCIIInput.h"; sourceTree = "<group>"; };
+		5F7A914F1AB7591E001E88DD /* PARImage+ASCIIInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "PARImage+ASCIIInput.m"; path = "External/ASCIImage/Core/PARImage+ASCIIInput.m"; sourceTree = "<group>"; };
+		5F7A91511AB75EE0001E88DD /* NSString+ASCII.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+ASCII.h"; path = "ASCIImagination/NSString+ASCII.h"; sourceTree = "<group>"; };
+		5F7A91521AB75EE0001E88DD /* NSString+ASCII.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+ASCII.m"; path = "ASCIImagination/NSString+ASCII.m"; sourceTree = "<group>"; };
+		5F7A91541AB7B604001E88DD /* MASPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MASPreferencesViewController.h; path = External/MASPreferences/MASPreferencesViewController.h; sourceTree = "<group>"; };
+		5F7A91551AB7B604001E88DD /* MASPreferencesWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MASPreferencesWindow.xib; path = External/MASPreferences/MASPreferencesWindow.xib; sourceTree = "<group>"; };
+		5F7A91561AB7B604001E88DD /* MASPreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MASPreferencesWindowController.h; path = External/MASPreferences/MASPreferencesWindowController.h; sourceTree = "<group>"; };
+		5F7A91571AB7B604001E88DD /* MASPreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MASPreferencesWindowController.m; path = External/MASPreferences/MASPreferencesWindowController.m; sourceTree = "<group>"; };
+		5F7A915B1AB7B679001E88DD /* MPGeneralPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPGeneralPreferencesViewController.h; sourceTree = "<group>"; };
+		5F7A915C1AB7B679001E88DD /* MPGeneralPreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPGeneralPreferencesViewController.m; sourceTree = "<group>"; };
+		5F7A915D1AB7B679001E88DD /* MPGeneralPreferencesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MPGeneralPreferencesViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +87,11 @@
 		5F2A7F361AB73F12006F5CFB = {
 			isa = PBXGroup;
 			children = (
-				5F2A7F681AB74485006F5CFB /* New Group */,
+				5F7A915A1AB7B608001E88DD /* MASPreferences */,
+				5F7A91511AB75EE0001E88DD /* NSString+ASCII.h */,
+				5F7A91521AB75EE0001E88DD /* NSString+ASCII.m */,
+				5F7A914E1AB7591E001E88DD /* PARImage+ASCIIInput.h */,
+				5F7A914F1AB7591E001E88DD /* PARImage+ASCIIInput.m */,
 				5F2A7F411AB73F12006F5CFB /* ASCIImagination */,
 				5F2A7F5B1AB73F12006F5CFB /* ASCIImaginationTests */,
 				5F2A7F401AB73F12006F5CFB /* Products */,
@@ -83,6 +110,10 @@
 		5F2A7F411AB73F12006F5CFB /* ASCIImagination */ = {
 			isa = PBXGroup;
 			children = (
+				5F7A91461AB7461B001E88DD /* MPASCIImageTextViewController.h */,
+				5F7A91471AB7461B001E88DD /* MPASCIImageTextViewController.m */,
+				5F7A91431AB745D4001E88DD /* MPASCIImagePreviewViewController.h */,
+				5F7A91441AB745D4001E88DD /* MPASCIImagePreviewViewController.m */,
 				5F2A7F441AB73F12006F5CFB /* MPASCIImaginationAppDelegate.h */,
 				5F2A7F451AB73F12006F5CFB /* MPASCIImaginationAppDelegate.m */,
 				5F2A7F491AB73F12006F5CFB /* MPASCIImageEditorViewController.h */,
@@ -92,6 +123,9 @@
 				5F2A7F4F1AB73F12006F5CFB /* Images.xcassets */,
 				5F2A7F511AB73F12006F5CFB /* Main.storyboard */,
 				5F2A7F421AB73F12006F5CFB /* Supporting Files */,
+				5F7A915B1AB7B679001E88DD /* MPGeneralPreferencesViewController.h */,
+				5F7A915C1AB7B679001E88DD /* MPGeneralPreferencesViewController.m */,
+				5F7A915D1AB7B679001E88DD /* MPGeneralPreferencesViewController.xib */,
 			);
 			path = ASCIImagination;
 			sourceTree = "<group>";
@@ -122,11 +156,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		5F2A7F681AB74485006F5CFB /* New Group */ = {
+		5F7A915A1AB7B608001E88DD /* MASPreferences */ = {
 			isa = PBXGroup;
 			children = (
+				5F7A91541AB7B604001E88DD /* MASPreferencesViewController.h */,
+				5F7A91551AB7B604001E88DD /* MASPreferencesWindow.xib */,
+				5F7A91561AB7B604001E88DD /* MASPreferencesWindowController.h */,
+				5F7A91571AB7B604001E88DD /* MASPreferencesWindowController.m */,
 			);
-			name = "New Group";
+			name = MASPreferences;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +249,8 @@
 			files = (
 				5F2A7F501AB73F12006F5CFB /* Images.xcassets in Resources */,
 				5F2A7F531AB73F12006F5CFB /* Main.storyboard in Resources */,
+				5F7A91581AB7B604001E88DD /* MASPreferencesWindow.xib in Resources */,
+				5F7A915F1AB7B679001E88DD /* MPGeneralPreferencesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,10 +268,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F7A91491AB7461B001E88DD /* MPASCIImageTextViewController.m in Sources */,
+				5F7A915E1AB7B679001E88DD /* MPGeneralPreferencesViewController.m in Sources */,
+				5F7A91501AB7591E001E88DD /* PARImage+ASCIIInput.m in Sources */,
 				5F2A7F4E1AB73F12006F5CFB /* MPASCIImageDocument.m in Sources */,
 				5F2A7F4B1AB73F12006F5CFB /* MPASCIImageEditorViewController.m in Sources */,
+				5F7A91591AB7B604001E88DD /* MASPreferencesWindowController.m in Sources */,
 				5F2A7F481AB73F12006F5CFB /* main.m in Sources */,
 				5F2A7F461AB73F12006F5CFB /* MPASCIImaginationAppDelegate.m in Sources */,
+				5F7A91451AB745D4001E88DD /* MPASCIImagePreviewViewController.m in Sources */,
+				5F7A91531AB75EE0001E88DD /* NSString+ASCII.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +464,7 @@
 				5F2A7F641AB73F12006F5CFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5F2A7F651AB73F12006F5CFB /* Build configuration list for PBXNativeTarget "ASCIImaginationTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +473,7 @@
 				5F2A7F671AB73F12006F5CFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

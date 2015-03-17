@@ -4,3 +4,9 @@
 [submodule "External/ASCIImage.git"]
 	path = External/ASCIImage.git
 	url = git@github.com:mz2/ASCIImage.git
+[submodule "External/ASCIImage"]
+	path = External/ASCIImage
+	url = git@github.com:mz2/ASCIImage.git
+[submodule "External/MASPreferences"]
+	path = External/MASPreferences
+	url = git@github.com:mz2/MASPreferences.git

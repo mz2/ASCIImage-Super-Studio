@@ -8,8 +8,11 @@
 
 #import "MPASCIImageDocument.h"
 
-@interface MPASCIImageDocument ()
+#import "MPASCIImageEditorViewController.h"
+#import "MPASCIImageTextViewController.h"
 
+@interface MPASCIImageDocument ()
+@property (readwrite, nonatomic) NSString *imageString;
 @end
 
 @implementation MPASCIImageDocument
@@ -34,20 +37,30 @@
 - (void)makeWindowControllers {
     // Override to return the Storyboard file name of the document.
     [self addWindowController:[[NSStoryboard storyboardWithName:@"Main" bundle:nil] instantiateControllerWithIdentifier:@"Document Window Controller"]];
+    
+    self.imageString = self.imageString;
 }
 
 - (NSData *)dataOfType:(NSString *)typeName error:(NSError **)outError {
-    // Insert code here to write your document to data of the specified type. If outError != NULL, ensure that you create and set an appropriate error when returning nil.
-    // You can also choose to override -fileWrapperOfType:error:, -writeToURL:ofType:error:, or -writeToURL:ofType:forSaveOperation:originalContentsURL:error: instead.
-    [NSException raise:@"UnimplementedMethod" format:@"%@ is unimplemented", NSStringFromSelector(_cmd)];
-    return nil;
+    NSWindowController *winC = self.windowControllers[0];
+    MPASCIImageEditorViewController *editorController = (id)winC.contentViewController;
+    
+    return [editorController.textViewController.editorTextArea.string dataUsingEncoding:NSUTF8StringEncoding];
+}
+
+- (void)setImageString:(NSString *)str {
+    _imageString = str;
+    
+    if (self.windowControllers.count > 0) {
+        NSWindowController *winC = self.windowControllers[0];
+        MPASCIImageEditorViewController *editorController = (id)winC.contentViewController;
+        
+        editorController.textViewController.editorTextArea.string = [str stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+    }
 }
 
 - (BOOL)readFromData:(NSData *)data ofType:(NSString *)typeName error:(NSError **)outError {
-    // Insert code here to read your document from the given data of the specified type. If outError != NULL, ensure that you create and set an appropriate error when returning NO.
-    // You can also choose to override -readFromFileWrapper:ofType:error: or -readFromURL:ofType:error: instead.
-    // If you override either of these, you should also override -isEntireFileLoaded to return NO if the contents are lazily loaded.
-    [NSException raise:@"UnimplementedMethod" format:@"%@ is unimplemented", NSStringFromSelector(_cmd)];
+    self.imageString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
     return YES;
 }
 

@@ -10,6 +10,7 @@
 
 @interface MPASCIImageDocument : NSDocument
 
+@property (readonly, nonatomic) NSString *imageString;
 
 @end
 
