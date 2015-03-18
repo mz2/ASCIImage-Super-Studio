@@ -33,6 +33,9 @@
 		5F7A915F1AB7B679001E88DD /* MPGeneralPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F7A915D1AB7B679001E88DD /* MPGeneralPreferencesViewController.xib */; };
 		5FA20A211AB9D1D1006A0DC6 /* HockeySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FA20A201AB9D1D1006A0DC6 /* HockeySDK.framework */; };
 		5FA20A3F1AB9D5A5006A0DC6 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FA20A331AB9D578006A0DC6 /* Sparkle.framework */; };
+		5FA20A441AB9D6DE006A0DC6 /* com.andymatuschak.Sparkle.SandboxService.xpc in Copy XPC Services */ = {isa = PBXBuildFile; fileRef = 5FA20A431AB9D6DE006A0DC6 /* com.andymatuschak.Sparkle.SandboxService.xpc */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5FA20A491AB9D7C9006A0DC6 /* Sparkle.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 5FA20A331AB9D578006A0DC6 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5FA20A4B1AB9D846006A0DC6 /* HockeySDK.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 5FA20A201AB9D1D1006A0DC6 /* HockeySDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5FB8CA2D1AB98DB30047ECF3 /* GenerateThumbnailForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FB8CA2C1AB98DB30047ECF3 /* GenerateThumbnailForURL.m */; };
 		5FB8CA2F1AB98DB30047ECF3 /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FB8CA2E1AB98DB30047ECF3 /* GeneratePreviewForURL.m */; };
 		5FB8CA311AB98DB30047ECF3 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 5FB8CA301AB98DB30047ECF3 /* main.c */; };
@@ -92,6 +95,20 @@
 			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
 			remoteInfo = Sparkle;
 		};
+		5FA20A421AB9D6DE006A0DC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5FA20A271AB9D577006A0DC6 /* Sparkle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B887B5E1517F3AB000BB292;
+			remoteInfo = sandbox_service;
+		};
+		5FA20A451AB9D6E5006A0DC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5FA20A271AB9D577006A0DC6 /* Sparkle.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B887B5D1517F3AB000BB292;
+			remoteInfo = sandbox_service;
+		};
 		5FB8CA5A1AB99F220047ECF3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5F2A7F371AB73F12006F5CFB /* Project object */;
@@ -108,8 +125,21 @@
 			dstPath = Contents/XPCServices;
 			dstSubfolderSpec = 1;
 			files = (
+				5FA20A441AB9D6DE006A0DC6 /* com.andymatuschak.Sparkle.SandboxService.xpc in Copy XPC Services */,
 			);
 			name = "Copy XPC Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FA20A481AB9D7BA006A0DC6 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5FA20A491AB9D7C9006A0DC6 /* Sparkle.framework in Copy Frameworks */,
+				5FA20A4B1AB9D846006A0DC6 /* HockeySDK.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		5FB8CA3A1AB997A10047ECF3 /* CopyFiles */ = {
@@ -358,6 +388,7 @@
 				5FA20A371AB9D578006A0DC6 /* Sparkle Unit Tests.xctest */,
 				5FA20A391AB9D578006A0DC6 /* BinaryDelta */,
 				5FA20A3B1AB9D578006A0DC6 /* Autoupdate.app */,
+				5FA20A431AB9D6DE006A0DC6 /* com.andymatuschak.Sparkle.SandboxService.xpc */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -417,11 +448,14 @@
 				5FB8CA3A1AB997A10047ECF3 /* CopyFiles */,
 				5FA20A221AB9D236006A0DC6 /* Modify Version */,
 				5FA20A1D1AB9D134006A0DC6 /* HockeyApp */,
+				5FA20A481AB9D7BA006A0DC6 /* Copy Frameworks */,
 				5FA20A401AB9D651006A0DC6 /* Copy XPC Services */,
+				5FA20A471AB9D742006A0DC6 /* Codesign HockeySDK */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5FA20A461AB9D6E5006A0DC6 /* PBXTargetDependency */,
 				5FA20A3E1AB9D59C006A0DC6 /* PBXTargetDependency */,
 				5FB8CA5B1AB99F220047ECF3 /* PBXTargetDependency */,
 			);
@@ -555,6 +589,13 @@
 			remoteRef = 5FA20A3A1AB9D578006A0DC6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		5FA20A431AB9D6DE006A0DC6 /* com.andymatuschak.Sparkle.SandboxService.xpc */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = com.andymatuschak.Sparkle.SandboxService.xpc;
+			remoteRef = 5FA20A421AB9D6DE006A0DC6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -613,6 +654,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Script/set-bundle-version.sh\"";
+		};
+		5FA20A471AB9D742006A0DC6 /* Codesign HockeySDK */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Codesign HockeySDK";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "LOCATION=\"${BUILT_PRODUCTS_DIR}\"/\"${FRAMEWORKS_FOLDER_PATH}\"\nIDENTITY=\"Developer ID Application: Manuscripts.app Limited\"\ncodesign --verbose --force --sign \"$IDENTITY\" \"$LOCATION\"/HockeySDK.framework/Versions/A/Frameworks/CrashReporter.framework\ncodesign --verbose --force --sign \"$IDENTITY\" \"$LOCATION\"/HockeySDK.framework/Versions/A";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -675,6 +730,11 @@
 			isa = PBXTargetDependency;
 			name = Sparkle;
 			targetProxy = 5FA20A3D1AB9D59C006A0DC6 /* PBXContainerItemProxy */;
+		};
+		5FA20A461AB9D6E5006A0DC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = sandbox_service;
+			targetProxy = 5FA20A451AB9D6E5006A0DC6 /* PBXContainerItemProxy */;
 		};
 		5FB8CA5B1AB99F220047ECF3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -776,7 +836,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "ASCIImage Super Studio.entitlements";
-				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_IDENTITY = "Developer ID Application: Manuscripts.app Limited (SJK358RN87)";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -794,7 +854,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "ASCIImage Super Studio.entitlements";
-				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_IDENTITY = "Developer ID Application: Manuscripts.app Limited (SJK358RN87)";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
