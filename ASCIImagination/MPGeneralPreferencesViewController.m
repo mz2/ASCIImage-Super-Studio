@@ -29,8 +29,11 @@
     self.colorPickerPopover.action = @selector(didChooseColor:);
     
     NSData *colorData = [[NSUserDefaults standardUserDefaults] objectForKey:@"strokeColor"];
-    NSColor *color = [NSUnarchiver unarchiveObjectWithData:colorData];
-    self.colorChoiceButton.color = color;
+    
+    if (colorData) {
+        NSColor *color = [NSUnarchiver unarchiveObjectWithData:colorData];
+        self.colorChoiceButton.color = color;
+    }
 }
 
 - (NSString *)identifier {
