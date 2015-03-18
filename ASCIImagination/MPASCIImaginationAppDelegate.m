@@ -10,6 +10,8 @@
 #import "MPGeneralPreferencesViewController.h"
 #import "MASPreferencesWindowController.h"
 
+#import <HockeySDK/HockeySDK.h>
+
 @interface AppDelegate ()
 @property (readwrite) NSWindowController *preferencesWindowController;
 @end
@@ -18,6 +20,9 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
+    
+    [[BITHockeyManager sharedHockeyManager] configureWithIdentifier:@"8ac351501c5c3db78ececb2f7e26062f"];
+    [[BITHockeyManager sharedHockeyManager] startManager];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
