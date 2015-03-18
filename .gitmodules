@@ -13,3 +13,6 @@
 [submodule "External/BFColorPickerPopover"]
 	path = External/BFColorPickerPopover
 	url = git@github.com:mz2/BFColorPickerPopover.git
+[submodule "External/Sparkle"]
+	path = External/Sparkle
+	url = git@github.com:mpapp/Sparkle.git
