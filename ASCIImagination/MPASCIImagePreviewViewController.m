@@ -68,7 +68,18 @@
         context[ASCIIContextLineWidth] = @(strokeWidth);
         
         NSData *colorData = [[NSUserDefaults standardUserDefaults] objectForKey:@"strokeColor"];
-        NSColor *color = [NSUnarchiver unarchiveObjectWithData:colorData] ?: [NSColor blackColor];
+        
+        NSColor *defaultColor = [NSColor blackColor];
+        NSColor *color;
+        if (colorData) {
+            color = [NSUnarchiver unarchiveObjectWithData:colorData];
+            if (!color) {
+                color = defaultColor;
+            }
+        }
+        else {
+            color = defaultColor;
+        }
         context[ASCIIContextStrokeColor] = color;
         
         NSData *fillColorData = [[NSUserDefaults standardUserDefaults] objectForKey:@"fillColor"];

@@ -17,7 +17,7 @@
                BlueprintIdentifier = "5FB8CA271AB98DB30047ECF3"
                BuildableName = "ASCIImageQuickLook.qlgenerator"
                BlueprintName = "ASCIImageQuickLook"
-               ReferencedContainer = "container:ASCIImagination.xcodeproj">
+               ReferencedContainer = "container:ASS.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,7 +45,7 @@
             BlueprintIdentifier = "5FB8CA271AB98DB30047ECF3"
             BuildableName = "ASCIImageQuickLook.qlgenerator"
             BlueprintName = "ASCIImageQuickLook"
-            ReferencedContainer = "container:ASCIImagination.xcodeproj">
+            ReferencedContainer = "container:ASS.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -63,7 +63,7 @@
             BlueprintIdentifier = "5FB8CA271AB98DB30047ECF3"
             BuildableName = "ASCIImageQuickLook.qlgenerator"
             BlueprintName = "ASCIImageQuickLook"
-            ReferencedContainer = "container:ASCIImagination.xcodeproj">
+            ReferencedContainer = "container:ASS.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

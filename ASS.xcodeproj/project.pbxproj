@@ -610,7 +610,7 @@
 				INFOPLIST_FILE = ASCIImaginationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ASCIImagination.app/Contents/MacOS/ASCIImagination";
+				TEST_HOST = "\"$(BUILT_PRODUCTS_DIR)/ASCIImage Super Studio.app/Contents/MacOS/ASCIImage Super Studio\"";
 			};
 			name = Debug;
 		};
@@ -626,7 +626,7 @@
 				INFOPLIST_FILE = ASCIImaginationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ASCIImagination.app/Contents/MacOS/ASCIImagination";
+				TEST_HOST = "\"$(BUILT_PRODUCTS_DIR)/ASCIImage Super Studio.app/Contents/MacOS/ASCIImage Super Studio\"";
 			};
 			name = Release;
 		};

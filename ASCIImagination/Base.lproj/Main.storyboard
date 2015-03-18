@@ -659,7 +659,7 @@
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="478" y="320" width="677" height="446"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
-                        <value key="minSize" type="size" width="480" height="270"/>
+                        <value key="minSize" type="size" width="320" height="150"/>
                     </window>
                     <connections>
                         <segue destination="5TS-nL-KWg" kind="relationship" relationship="window.shadowedContentViewController" id="cfi-K6-d3Z"/>

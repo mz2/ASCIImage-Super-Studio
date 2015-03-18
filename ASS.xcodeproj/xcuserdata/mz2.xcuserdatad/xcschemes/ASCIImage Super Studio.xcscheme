@@ -15,23 +15,23 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5F2A7F3E1AB73F12006F5CFB"
-               BuildableName = "ASCIImagination.app"
-               BlueprintName = "ASCIImagination"
-               ReferencedContainer = "container:ASCIImagination.xcodeproj">
+               BuildableName = "ASCIImage Super Studio.app"
+               BlueprintName = "ASCIImage Super Studio"
+               ReferencedContainer = "container:ASS.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
             buildForTesting = "YES"
-            buildForRunning = "YES"
+            buildForRunning = "NO"
             buildForProfiling = "NO"
             buildForArchiving = "NO"
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5F2A7F571AB73F12006F5CFB"
-               BuildableName = "ASCIImaginationTests.xctest"
-               BlueprintName = "ASCIImaginationTests"
-               ReferencedContainer = "container:ASCIImagination.xcodeproj">
+               BuildableName = "ASCIImage Super Studio Tests.xctest"
+               BlueprintName = "ASCIImage Super Studio Tests"
+               ReferencedContainer = "container:ASS.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5F2A7F571AB73F12006F5CFB"
-               BuildableName = "ASCIImaginationTests.xctest"
-               BlueprintName = "ASCIImaginationTests"
-               ReferencedContainer = "container:ASCIImagination.xcodeproj">
+               BuildableName = "ASCIImage Super Studio Tests.xctest"
+               BlueprintName = "ASCIImage Super Studio Tests"
+               ReferencedContainer = "container:ASS.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5F2A7F3E1AB73F12006F5CFB"
-            BuildableName = "ASCIImagination.app"
-            BlueprintName = "ASCIImagination"
-            ReferencedContainer = "container:ASCIImagination.xcodeproj">
+            BuildableName = "ASCIImage Super Studio.app"
+            BlueprintName = "ASCIImage Super Studio"
+            ReferencedContainer = "container:ASS.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -77,9 +77,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5F2A7F3E1AB73F12006F5CFB"
-            BuildableName = "ASCIImagination.app"
-            BlueprintName = "ASCIImagination"
-            ReferencedContainer = "container:ASCIImagination.xcodeproj">
+            BuildableName = "ASCIImage Super Studio.app"
+            BlueprintName = "ASCIImage Super Studio"
+            ReferencedContainer = "container:ASS.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -96,9 +96,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5F2A7F3E1AB73F12006F5CFB"
-            BuildableName = "ASCIImagination.app"
-            BlueprintName = "ASCIImagination"
-            ReferencedContainer = "container:ASCIImagination.xcodeproj">
+            BuildableName = "ASCIImage Super Studio.app"
+            BlueprintName = "ASCIImage Super Studio"
+            ReferencedContainer = "container:ASS.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

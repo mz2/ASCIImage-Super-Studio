@@ -18,4 +18,10 @@
     [self.delegate ASCIImageTextViewControllerDidRefresh:self];
 }
 
+- (void)viewDidLoad {
+    NSFont *font = [NSFont fontWithName:@"Menlo" size:18.0f];
+    [self.editorTextArea setTextColor:[NSColor grayColor]];
+    [self.editorTextArea setFont:font];
+}
+
 @end
