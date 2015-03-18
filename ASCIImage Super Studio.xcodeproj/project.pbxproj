@@ -446,7 +446,6 @@
 				5F2A7F3C1AB73F12006F5CFB /* Frameworks */,
 				5F2A7F3D1AB73F12006F5CFB /* Resources */,
 				5FB8CA3A1AB997A10047ECF3 /* CopyFiles */,
-				5FA20A221AB9D236006A0DC6 /* Modify Version */,
 				5FA20A1D1AB9D134006A0DC6 /* HockeyApp */,
 				5FA20A481AB9D7BA006A0DC6 /* Copy Frameworks */,
 				5FA20A401AB9D651006A0DC6 /* Copy XPC Services */,
@@ -640,20 +639,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "FILE=\"${SRCROOT}/Libraries/HockeySDK-Mac/BuildAgent\"\nif [ -f \"$FILE\" ]; then\n\"$FILE\"\nfi";
-		};
-		5FA20A221AB9D236006A0DC6 /* Modify Version */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Modify Version";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Script/set-bundle-version.sh\"";
 		};
 		5FA20A471AB9D742006A0DC6 /* Codesign HockeySDK */ = {
 			isa = PBXShellScriptBuildPhase;

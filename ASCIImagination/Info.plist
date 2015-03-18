@@ -42,7 +42,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>0.3</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
@@ -55,6 +55,8 @@
 	<string>Main</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
+	<key>SUFeedURL</key>
+	<string>https://rink.hockeyapp.net/api/2/apps/8ac351501c5c3db78ececb2f7e26062f</string>
 	<key>UTExportedTypeDeclarations</key>
 	<array>
 		<dict>
@@ -84,7 +86,5 @@
 			</dict>
 		</dict>
 	</array>
-    <key>SUFeedURL</key>
-    <string>https://rink.hockeyapp.net/api/2/apps/8ac351501c5c3db78ececb2f7e26062f</string>
 </dict>
 </plist>
