@@ -21,33 +21,16 @@
 
 -(void)mouseDown:(NSEvent *)event {
     NSPasteboardItem *pbItem = [NSPasteboardItem new];
-    [pbItem setDataProvider:self forTypes:@[NSPasteboardTypeTIFF, NSPasteboardTypePDF, NSPasteboardTypePNG]];
+    [pbItem setDataProvider:self forTypes:@[NSPasteboardTypePDF, NSPasteboardTypePNG]];
 
     NSDraggingItem *dragItem = [[NSDraggingItem alloc] initWithPasteboardWriter:pbItem];
     
-    NSRect draggingRect = self.bounds;
-    [dragItem setDraggingFrame:draggingRect contents:self.image];
+    NSRect imageRect = [self.cell drawingRectForBounds:self.bounds];
+    [dragItem setDraggingFrame:imageRect contents:self.image];
     
     NSDraggingSession *draggingSession = [self beginDraggingSessionWithItems:@[dragItem] event:event source:self];
     draggingSession.animatesToStartingPositionsOnCancelOrFail = YES;
     draggingSession.draggingFormation = NSDraggingFormationNone;
-    
-    [draggingSession enumerateDraggingItemsWithOptions:NSDraggingItemEnumerationConcurrent
-                                               forView:self
-                                               classes:[NSArray arrayWithObject:[NSPasteboardItem class]]
-                                         searchOptions:nil
-                                            usingBlock:^(NSDraggingItem *draggingItem, NSInteger index, BOOL *stop)
-    {
-        CGImageRef cgRef = [self.image CGImageForProposedRect:NULL context:nil hints:nil];
-        NSBitmapImageRep *newRep = [[NSBitmapImageRep alloc] initWithCGImage:cgRef];
-        [newRep setSize:NSMakeSize(self.image.size.width * 6, self.image.size.width * 6)];
-        NSData *pngData = [newRep representationUsingType:NSPNGFileType properties:nil];
-        
-        [draggingItem setDraggingFrame:NSMakeRect(0, 0,
-                                                  newRep.size.width, newRep.size.height)
-                              contents:pngData];
-     }];
-    
     return;
 }
 
@@ -68,20 +51,19 @@
 }
 
 - (void)pasteboard:(NSPasteboard *)sender item:(NSPasteboardItem *)item provideDataForType:(NSString *)type {
-    if ([type compare:NSPasteboardTypeTIFF] == NSOrderedSame) {
-        [sender setData:self.image.TIFFRepresentation forType:NSPasteboardTypeTIFF];
-    }
+    CGImageRef cgRef = [self.image CGImageForProposedRect:NULL context:nil hints:nil];
+    NSBitmapImageRep *newRep = [[NSBitmapImageRep alloc] initWithCGImage:cgRef];
+    
+    NSSize imgSize = self.image.size;
+    [newRep setSize:imgSize];
+    
     if ([type compare:NSPasteboardTypePNG] == NSOrderedSame) {
-        CGImageRef cgRef = [self.image CGImageForProposedRect:NULL context:nil hints:nil];
-        NSBitmapImageRep *newRep = [[NSBitmapImageRep alloc] initWithCGImage:cgRef];
-        [newRep setSize:self.image.size];
         NSData *pngData = [newRep representationUsingType:NSPNGFileType properties:nil];
         [sender setData:pngData forType:NSPasteboardTypePNG];
     }
     else if ([type compare:NSPasteboardTypePDF] == NSOrderedSame) {
         [sender setData:[self dataWithPDFInsideRect:[self bounds]] forType:NSPasteboardTypePDF];
     }
-    
 }
 
 @end

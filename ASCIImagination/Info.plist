@@ -21,6 +21,10 @@
 			</array>
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>com.findingsapp.asciimage</string>
+			</array>
 			<key>NSDocumentClass</key>
 			<string>MPASCIImageDocument</string>
 		</dict>
@@ -51,5 +55,34 @@
 	<string>Main</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
+	<key>UTExportedTypeDeclarations</key>
+	<array>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.text</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>ASCII image</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.findingsapp.asciimage</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>com.apple.nspboard-type</key>
+				<array>
+					<string>com.findingsapp.asciimage</string>
+				</array>
+				<key>public.filename-extension</key>
+				<array>
+					<string>asciimage</string>
+					<string>ass</string>
+				</array>
+				<key>public.mime-type</key>
+				<array>
+					<string>text/plain</string>
+				</array>
+			</dict>
+		</dict>
+	</array>
 </dict>
 </plist>

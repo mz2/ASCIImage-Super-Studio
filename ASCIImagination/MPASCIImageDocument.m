@@ -54,7 +54,7 @@
     if (self.windowControllers.count > 0) {
         NSWindowController *winC = self.windowControllers[0];
         MPASCIImageEditorViewController *editorController = (id)winC.contentViewController;
-        editorController.textViewController.editorTextArea.string = str;
+        editorController.textViewController.editorTextArea.string = str ?: @"";
     }
 }
 

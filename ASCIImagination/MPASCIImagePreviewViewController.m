@@ -49,6 +49,8 @@
     
     PARImage *img = [PARImage imageWithASCIIRepresentation:asciiStrs contextHandler:^(NSMutableDictionary *context) {
         
+        context[ASCIIContextScale] = @(20.0f);
+        
         CGFloat strokeWidth = [[NSUserDefaults standardUserDefaults] floatForKey:@"strokeWidth"];
         if (strokeWidth <= 0)
             strokeWidth = 1.0f;
