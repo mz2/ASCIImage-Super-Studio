@@ -915,6 +915,7 @@
 				INFOPLIST_FILE = ASCIImageQuickLook/Info.plist;
 				INSTALL_PATH = /Library/QuickLook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = qlgenerator;
 			};
 			name = Debug;
@@ -927,6 +928,7 @@
 				INFOPLIST_FILE = ASCIImageQuickLook/Info.plist;
 				INSTALL_PATH = /Library/QuickLook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = qlgenerator;
 			};
 			name = Release;
