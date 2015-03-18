@@ -84,5 +84,7 @@
 			</dict>
 		</dict>
 	</array>
+    <key>SUFeedURL</key>
+    <string>https://rink.hockeyapp.net/api/2/apps/8ac351501c5c3db78ececb2f7e26062f</string>
 </dict>
 </plist>
