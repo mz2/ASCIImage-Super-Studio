@@ -24,6 +24,12 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(preferencesDidChange:)
                                                  name:NSUserDefaultsDidChangeNotification object:nil];
+    
+    [[NSUserDefaults standardUserDefaults] registerDefaults:@{@"previewScale": @(30.0f)}];
+}
+
+- (void)viewWillAppear {
+    [self ASCIImageTextViewControllerDidRefresh:self.textViewController]; // hack.
 }
 
 - (void)preferencesDidChange:(NSNotification *)notification {
@@ -48,6 +54,10 @@
     }
     
     PARImage *img = [PARImage imageWithASCIIRepresentation:asciiStrs contextHandler:^(NSMutableDictionary *context) {
+        
+        CGFloat scaleFactor = [[NSUserDefaults standardUserDefaults] floatForKey:@"previewScale"];
+        if (scaleFactor <= 0)
+            scaleFactor = 20.0f;
         
         context[ASCIIContextScale] = @(20.0f);
         

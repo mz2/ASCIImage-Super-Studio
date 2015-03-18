@@ -89,7 +89,7 @@
 		5F01B7BC1AB7BD4700EB02F4 /* BFIconTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BFIconTabBar.m; path = "External/BFColorPickerPopover/BFColorPickerPopover/Helper Classes/BFIconTabBar.m"; sourceTree = "<group>"; };
 		5F01B7C01AB84FBD00EB02F4 /* MPASCIImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPASCIImageView.h; sourceTree = "<group>"; };
 		5F01B7C11AB84FBD00EB02F4 /* MPASCIImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPASCIImageView.m; sourceTree = "<group>"; };
-		5F2A7F3F1AB73F12006F5CFB /* ASCIImagination.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASCIImagination.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F2A7F3F1AB73F12006F5CFB /* ASCIImage Super Studio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ASCIImage Super Studio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F2A7F431AB73F12006F5CFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F2A7F441AB73F12006F5CFB /* MPASCIImaginationAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPASCIImaginationAppDelegate.h; sourceTree = "<group>"; };
 		5F2A7F451AB73F12006F5CFB /* MPASCIImaginationAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPASCIImaginationAppDelegate.m; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 		5F2A7F4D1AB73F12006F5CFB /* MPASCIImageDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPASCIImageDocument.m; sourceTree = "<group>"; };
 		5F2A7F4F1AB73F12006F5CFB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5F2A7F521AB73F12006F5CFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5F2A7F581AB73F12006F5CFB /* ASCIImaginationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ASCIImaginationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F2A7F581AB73F12006F5CFB /* ASCIImage Super Studio Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ASCIImage Super Studio Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F2A7F5D1AB73F12006F5CFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F2A7F5E1AB73F12006F5CFB /* ASCIImaginationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASCIImaginationTests.m; sourceTree = "<group>"; };
 		5F7A91431AB745D4001E88DD /* MPASCIImagePreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPASCIImagePreviewViewController.h; sourceTree = "<group>"; };
@@ -194,8 +194,8 @@
 		5F2A7F401AB73F12006F5CFB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5F2A7F3F1AB73F12006F5CFB /* ASCIImagination.app */,
-				5F2A7F581AB73F12006F5CFB /* ASCIImaginationTests.xctest */,
+				5F2A7F3F1AB73F12006F5CFB /* ASCIImage Super Studio.app */,
+				5F2A7F581AB73F12006F5CFB /* ASCIImage Super Studio Tests.xctest */,
 				5FB8CA281AB98DB30047ECF3 /* ASCIImageQuickLook.qlgenerator */,
 			);
 			name = Products;
@@ -298,9 +298,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5F2A7F3E1AB73F12006F5CFB /* ASCIImagination */ = {
+		5F2A7F3E1AB73F12006F5CFB /* ASCIImage Super Studio */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5F2A7F621AB73F12006F5CFB /* Build configuration list for PBXNativeTarget "ASCIImagination" */;
+			buildConfigurationList = 5F2A7F621AB73F12006F5CFB /* Build configuration list for PBXNativeTarget "ASCIImage Super Studio" */;
 			buildPhases = (
 				5F2A7F3B1AB73F12006F5CFB /* Sources */,
 				5F2A7F3C1AB73F12006F5CFB /* Frameworks */,
@@ -312,14 +312,14 @@
 			dependencies = (
 				5FB8CA5B1AB99F220047ECF3 /* PBXTargetDependency */,
 			);
-			name = ASCIImagination;
+			name = "ASCIImage Super Studio";
 			productName = ASCIImagination;
-			productReference = 5F2A7F3F1AB73F12006F5CFB /* ASCIImagination.app */;
+			productReference = 5F2A7F3F1AB73F12006F5CFB /* ASCIImage Super Studio.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5F2A7F571AB73F12006F5CFB /* ASCIImaginationTests */ = {
+		5F2A7F571AB73F12006F5CFB /* ASCIImage Super Studio Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5F2A7F651AB73F12006F5CFB /* Build configuration list for PBXNativeTarget "ASCIImaginationTests" */;
+			buildConfigurationList = 5F2A7F651AB73F12006F5CFB /* Build configuration list for PBXNativeTarget "ASCIImage Super Studio Tests" */;
 			buildPhases = (
 				5F2A7F541AB73F12006F5CFB /* Sources */,
 				5F2A7F551AB73F12006F5CFB /* Frameworks */,
@@ -330,9 +330,9 @@
 			dependencies = (
 				5F2A7F5A1AB73F12006F5CFB /* PBXTargetDependency */,
 			);
-			name = ASCIImaginationTests;
+			name = "ASCIImage Super Studio Tests";
 			productName = ASCIImaginationTests;
-			productReference = 5F2A7F581AB73F12006F5CFB /* ASCIImaginationTests.xctest */;
+			productReference = 5F2A7F581AB73F12006F5CFB /* ASCIImage Super Studio Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		5FB8CA271AB98DB30047ECF3 /* ASCIImageQuickLook */ = {
@@ -374,7 +374,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5F2A7F3A1AB73F12006F5CFB /* Build configuration list for PBXProject "ASCIImagination" */;
+			buildConfigurationList = 5F2A7F3A1AB73F12006F5CFB /* Build configuration list for PBXProject "ASS" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -387,8 +387,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5F2A7F3E1AB73F12006F5CFB /* ASCIImagination */,
-				5F2A7F571AB73F12006F5CFB /* ASCIImaginationTests */,
+				5F2A7F3E1AB73F12006F5CFB /* ASCIImage Super Studio */,
+				5F2A7F571AB73F12006F5CFB /* ASCIImage Super Studio Tests */,
 				5FB8CA271AB98DB30047ECF3 /* ASCIImageQuickLook */,
 			);
 		};
@@ -474,7 +474,7 @@
 /* Begin PBXTargetDependency section */
 		5F2A7F5A1AB73F12006F5CFB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5F2A7F3E1AB73F12006F5CFB /* ASCIImagination */;
+			target = 5F2A7F3E1AB73F12006F5CFB /* ASCIImage Super Studio */;
 			targetProxy = 5F2A7F591AB73F12006F5CFB /* PBXContainerItemProxy */;
 		};
 		5FB8CA5B1AB99F220047ECF3 /* PBXTargetDependency */ = {
@@ -659,7 +659,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5F2A7F3A1AB73F12006F5CFB /* Build configuration list for PBXProject "ASCIImagination" */ = {
+		5F2A7F3A1AB73F12006F5CFB /* Build configuration list for PBXProject "ASS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5F2A7F601AB73F12006F5CFB /* Debug */,
@@ -668,7 +668,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5F2A7F621AB73F12006F5CFB /* Build configuration list for PBXNativeTarget "ASCIImagination" */ = {
+		5F2A7F621AB73F12006F5CFB /* Build configuration list for PBXNativeTarget "ASCIImage Super Studio" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5F2A7F631AB73F12006F5CFB /* Debug */,
@@ -677,7 +677,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5F2A7F651AB73F12006F5CFB /* Build configuration list for PBXNativeTarget "ASCIImaginationTests" */ = {
+		5F2A7F651AB73F12006F5CFB /* Build configuration list for PBXNativeTarget "ASCIImage Super Studio Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5F2A7F661AB73F12006F5CFB /* Debug */,
@@ -693,6 +693,7 @@
 				5FB8CA331AB98DB30047ECF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

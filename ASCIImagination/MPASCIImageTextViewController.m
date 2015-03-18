@@ -14,11 +14,6 @@
 
 @implementation MPASCIImageTextViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do view setup here.
-}
-
 - (void)textDidChange:(NSNotification *)notification {
     [self.delegate ASCIImageTextViewControllerDidRefresh:self];
 }

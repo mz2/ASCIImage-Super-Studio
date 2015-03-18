@@ -13,12 +13,6 @@
 
 @implementation MPASCIImageView
 
-- (void)drawRect:(NSRect)dirtyRect {
-    [super drawRect:dirtyRect];
-    
-    // Drawing code here.
-}
-
 -(void)mouseDown:(NSEvent *)event {
     NSPasteboardItem *pbItem = [NSPasteboardItem new];
     [pbItem setDataProvider:self forTypes:@[NSPasteboardTypePDF, NSPasteboardTypePNG]];

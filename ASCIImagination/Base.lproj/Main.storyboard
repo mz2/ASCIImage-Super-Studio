@@ -919,9 +919,6 @@ Cg
                         <subviews>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QXj-DK-GI6" customClass="MPASCIImageView">
                                 <rect key="frame" x="0.0" y="0.0" width="300" height="204"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" priority="500" constant="300" id="eWb-Ej-Je0"/>
-                                </constraints>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" id="qIm-qB-rac"/>
                             </imageView>
                         </subviews>
