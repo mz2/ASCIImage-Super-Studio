@@ -455,7 +455,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "";
+			shellScript = "\"${SRCROOT}/Script/set-bundle-version.sh\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
