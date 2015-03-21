@@ -30,6 +30,7 @@
 		5F2CD8D41ABDA825001A4B27 /* PARImage+ASCIIInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7A914F1AB7591E001E88DD /* PARImage+ASCIIInput.m */; };
 		5F2CD8D51ABDA82B001A4B27 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F2CD8AB1ABDA129001A4B27 /* Cocoa.framework */; };
 		5F2CD8D81ABDA834001A4B27 /* libArgumentParser-Static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F2CD8BF1ABDA317001A4B27 /* libArgumentParser-Static.a */; };
+		5F2CD8DA1ABDAE7A001A4B27 /* NSString+ASCII.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7A91521AB75EE0001E88DD /* NSString+ASCII.m */; };
 		5F7A91451AB745D4001E88DD /* MPASCIImagePreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7A91441AB745D4001E88DD /* MPASCIImagePreviewViewController.m */; };
 		5F7A91491AB7461B001E88DD /* MPASCIImageTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7A91471AB7461B001E88DD /* MPASCIImageTextViewController.m */; };
 		5F7A91501AB7591E001E88DD /* PARImage+ASCIIInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7A914F1AB7591E001E88DD /* PARImage+ASCIIInput.m */; };
@@ -909,6 +910,7 @@
 				5F2CD8D31ABDA822001A4B27 /* MPLayeredASCIImageRenderer.m in Sources */,
 				5F2CD8CC1ABDA7F0001A4B27 /* main.m in Sources */,
 				5F2CD8D41ABDA825001A4B27 /* PARImage+ASCIIInput.m in Sources */,
+				5F2CD8DA1ABDAE7A001A4B27 /* NSString+ASCII.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1054,6 +1056,7 @@
 				CODE_SIGN_ENTITLEMENTS = "ASCIImage Super Studio.entitlements";
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
+				DSTROOT = "${HOME}";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/External/ASCIImage/HockeySDK-Mac",
@@ -1072,6 +1075,7 @@
 				CODE_SIGN_ENTITLEMENTS = "ASCIImage Super Studio.entitlements";
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
+				DSTROOT = "${HOME}";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/External/ASCIImage/HockeySDK-Mac",
@@ -1131,6 +1135,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"${SRCROOT}/External/ArgumentParser/ArgumentParser",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1144,6 +1149,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"${SRCROOT}/External/ArgumentParser/ArgumentParser",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
