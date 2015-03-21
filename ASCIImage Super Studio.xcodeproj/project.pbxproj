@@ -385,9 +385,9 @@
 			children = (
 				5FA20A331AB9D578006A0DC6 /* Sparkle.framework */,
 				5FA20A351AB9D578006A0DC6 /* Sparkle Test App.app */,
-				5FA20A371AB9D578006A0DC6 /* Sparkle Unit Tests.xctest */,
+				5FA20A371AB9D578006A0DC6 /* Sparkle Unit Tests.octest */,
 				5FA20A391AB9D578006A0DC6 /* BinaryDelta */,
-				5FA20A3B1AB9D578006A0DC6 /* Autoupdate.app */,
+				5FA20A3B1AB9D578006A0DC6 /* finish_installation.app */,
 				5FA20A431AB9D6DE006A0DC6 /* com.andymatuschak.Sparkle.SandboxService.xpc */,
 			);
 			name = Products;
@@ -567,10 +567,10 @@
 			remoteRef = 5FA20A341AB9D578006A0DC6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		5FA20A371AB9D578006A0DC6 /* Sparkle Unit Tests.xctest */ = {
+		5FA20A371AB9D578006A0DC6 /* Sparkle Unit Tests.octest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = "Sparkle Unit Tests.xctest";
+			path = "Sparkle Unit Tests.octest";
 			remoteRef = 5FA20A361AB9D578006A0DC6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -581,10 +581,10 @@
 			remoteRef = 5FA20A381AB9D578006A0DC6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		5FA20A3B1AB9D578006A0DC6 /* Autoupdate.app */ = {
+		5FA20A3B1AB9D578006A0DC6 /* finish_installation.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
-			path = Autoupdate.app;
+			path = finish_installation.app;
 			remoteRef = 5FA20A3A1AB9D578006A0DC6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
