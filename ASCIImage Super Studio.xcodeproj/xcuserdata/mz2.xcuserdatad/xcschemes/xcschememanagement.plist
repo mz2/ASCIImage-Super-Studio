@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>ASCIImage.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
 		<key>ASCIImageQuickLook.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>5F2A7F571AB73F12006F5CFB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5F2CD8841ABD9E5B001A4B27</key>
 		<dict>
 			<key>primary</key>
 			<true/>

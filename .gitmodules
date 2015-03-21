@@ -16,3 +16,6 @@
 [submodule "External/Sparkle"]
 	path = External/Sparkle
 	url = git@github.com:mpapp/Sparkle.git
+[submodule "External/ArgumentParser"]
+	path = External/ArgumentParser
+	url = git@github.com:mz2/ArgumentParser.git
