@@ -24,13 +24,6 @@
 		5F2A7F531AB73F12006F5CFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F2A7F511AB73F12006F5CFB /* Main.storyboard */; };
 		5F2A7F5F1AB73F12006F5CFB /* ASCIImaginationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2A7F5E1AB73F12006F5CFB /* ASCIImaginationTests.m */; };
 		5F2CD8801ABD9D24001A4B27 /* MPLayeredASCIImageRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2CD87F1ABD9D24001A4B27 /* MPLayeredASCIImageRenderer.m */; };
-		5F2CD8881ABD9E5B001A4B27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2CD8871ABD9E5B001A4B27 /* main.m */; };
-		5F2CD88D1ABD9E73001A4B27 /* ASCIImage in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5F2CD8851ABD9E5B001A4B27 /* ASCIImage */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		5F2CD88E1ABD9E76001A4B27 /* MPLayeredASCIImageRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2CD87F1ABD9D24001A4B27 /* MPLayeredASCIImageRenderer.m */; };
-		5F2CD88F1ABD9E7F001A4B27 /* NSString+ASCII.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7A91521AB75EE0001E88DD /* NSString+ASCII.m */; };
-		5F2CD8901ABD9E85001A4B27 /* PARImage+ASCIIInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7A914F1AB7591E001E88DD /* PARImage+ASCIIInput.m */; };
-		5F2CD8AC1ABDA129001A4B27 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F2CD8AB1ABDA129001A4B27 /* Cocoa.framework */; };
-		5F2CD8C41ABDA32A001A4B27 /* libArgumentParser-Static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F2CD8BF1ABDA317001A4B27 /* libArgumentParser-Static.a */; };
 		5F7A91451AB745D4001E88DD /* MPASCIImagePreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7A91441AB745D4001E88DD /* MPASCIImagePreviewViewController.m */; };
 		5F7A91491AB7461B001E88DD /* MPASCIImageTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7A91471AB7461B001E88DD /* MPASCIImageTextViewController.m */; };
 		5F7A91501AB7591E001E88DD /* PARImage+ASCIIInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7A914F1AB7591E001E88DD /* PARImage+ASCIIInput.m */; };
@@ -60,13 +53,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 5F2A7F3E1AB73F12006F5CFB;
 			remoteInfo = ASCIImagination;
-		};
-		5F2CD8911ABD9E8C001A4B27 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5F2A7F371AB73F12006F5CFB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5F2CD8841ABD9E5B001A4B27;
-			remoteInfo = ASCIImage;
 		};
 		5F2CD8B61ABDA317001A4B27 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -109,13 +95,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = DA01E2FF1A8471E20012BCAE;
 			remoteInfo = "ArgumentParser-Dynamic Tests";
-		};
-		5F2CD8C21ABDA321001A4B27 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5F2CD8AD1ABDA316001A4B27 /* ArgumentParser.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = DA87348818970AB800113896;
-			remoteInfo = "ArgumentParser-Static";
 		};
 		5FA20A321AB9D578006A0DC6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -183,22 +162,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		5F2CD8831ABD9E5B001A4B27 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
 		5F2CD88C1ABD9E6A001A4B27 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 6;
 			files = (
-				5F2CD88D1ABD9E73001A4B27 /* ASCIImage in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +241,6 @@
 		5F2A7F5E1AB73F12006F5CFB /* ASCIImaginationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASCIImaginationTests.m; sourceTree = "<group>"; };
 		5F2CD87E1ABD9D24001A4B27 /* MPLayeredASCIImageRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPLayeredASCIImageRenderer.h; sourceTree = "<group>"; };
 		5F2CD87F1ABD9D24001A4B27 /* MPLayeredASCIImageRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPLayeredASCIImageRenderer.m; sourceTree = "<group>"; };
-		5F2CD8851ABD9E5B001A4B27 /* ASCIImage */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ASCIImage; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F2CD8871ABD9E5B001A4B27 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5F2CD8AB1ABDA129001A4B27 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		5F2CD8AD1ABDA316001A4B27 /* ArgumentParser.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ArgumentParser.xcodeproj; path = External/ArgumentParser/ArgumentParser.xcodeproj; sourceTree = "<group>"; };
@@ -317,15 +285,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5F2CD8821ABD9E5B001A4B27 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5F2CD8C41ABDA32A001A4B27 /* libArgumentParser-Static.a in Frameworks */,
-				5F2CD8AC1ABDA129001A4B27 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,7 +342,6 @@
 				5F2A7F3F1AB73F12006F5CFB /* ASCIImage Super Studio.app */,
 				5F2A7F581AB73F12006F5CFB /* ASCIImage Super Studio Tests.xctest */,
 				5FB8CA281AB98DB30047ECF3 /* ASCIImageQuickLook.qlgenerator */,
-				5F2CD8851ABD9E5B001A4B27 /* ASCIImage */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -588,7 +546,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				5F2CD8921ABD9E8C001A4B27 /* PBXTargetDependency */,
 				5FA20A461AB9D6E5006A0DC6 /* PBXTargetDependency */,
 				5FA20A3E1AB9D59C006A0DC6 /* PBXTargetDependency */,
 				5FB8CA5B1AB99F220047ECF3 /* PBXTargetDependency */,
@@ -615,24 +572,6 @@
 			productName = ASCIImaginationTests;
 			productReference = 5F2A7F581AB73F12006F5CFB /* ASCIImage Super Studio Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		5F2CD8841ABD9E5B001A4B27 /* ASCIImage */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5F2CD8891ABD9E5B001A4B27 /* Build configuration list for PBXNativeTarget "ASCIImage" */;
-			buildPhases = (
-				5F2CD8811ABD9E5B001A4B27 /* Sources */,
-				5F2CD8821ABD9E5B001A4B27 /* Frameworks */,
-				5F2CD8831ABD9E5B001A4B27 /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5F2CD8C31ABDA321001A4B27 /* PBXTargetDependency */,
-			);
-			name = ASCIImage;
-			productName = ASCIImage;
-			productReference = 5F2CD8851ABD9E5B001A4B27 /* ASCIImage */;
-			productType = "com.apple.product-type.tool";
 		};
 		5FB8CA271AB98DB30047ECF3 /* ASCIImageQuickLook */ = {
 			isa = PBXNativeTarget;
@@ -674,9 +613,6 @@
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 5F2A7F3E1AB73F12006F5CFB;
 					};
-					5F2CD8841ABD9E5B001A4B27 = {
-						CreatedOnToolsVersion = 6.1;
-					};
 					5FB8CA271AB98DB30047ECF3 = {
 						CreatedOnToolsVersion = 6.2;
 					};
@@ -708,7 +644,6 @@
 				5F2A7F3E1AB73F12006F5CFB /* ASCIImage Super Studio */,
 				5F2A7F571AB73F12006F5CFB /* ASCIImage Super Studio Tests */,
 				5FB8CA271AB98DB30047ECF3 /* ASCIImageQuickLook */,
-				5F2CD8841ABD9E5B001A4B27 /* ASCIImage */,
 			);
 		};
 /* End PBXProject section */
@@ -895,17 +830,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5F2CD8811ABD9E5B001A4B27 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5F2CD88E1ABD9E76001A4B27 /* MPLayeredASCIImageRenderer.m in Sources */,
-				5F2CD8881ABD9E5B001A4B27 /* main.m in Sources */,
-				5F2CD8901ABD9E85001A4B27 /* PARImage+ASCIIInput.m in Sources */,
-				5F2CD88F1ABD9E7F001A4B27 /* NSString+ASCII.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5FB8CA231AB98DB30047ECF3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -925,16 +849,6 @@
 			isa = PBXTargetDependency;
 			target = 5F2A7F3E1AB73F12006F5CFB /* ASCIImage Super Studio */;
 			targetProxy = 5F2A7F591AB73F12006F5CFB /* PBXContainerItemProxy */;
-		};
-		5F2CD8921ABD9E8C001A4B27 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5F2CD8841ABD9E5B001A4B27 /* ASCIImage */;
-			targetProxy = 5F2CD8911ABD9E8C001A4B27 /* PBXContainerItemProxy */;
-		};
-		5F2CD8C31ABDA321001A4B27 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "ArgumentParser-Static";
-			targetProxy = 5F2CD8C21ABDA321001A4B27 /* PBXContainerItemProxy */;
 		};
 		5FA20A3E1AB9D59C006A0DC6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1113,37 +1027,6 @@
 			};
 			name = Release;
 		};
-		5F2CD88A1ABD9E5B001A4B27 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "Developer ID Application: Manuscripts.app Limited (SJK358RN87)";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"${SRCROOT}/External/ArgumentParser/ArgumentParser",
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		5F2CD88B1ABD9E5B001A4B27 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "Developer ID Application: Manuscripts.app Limited (SJK358RN87)";
-				COPY_PHASE_STRIP = YES;
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"${SRCROOT}/External/ArgumentParser/ArgumentParser",
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 		5FB8CA321AB98DB30047ECF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1203,14 +1086,6 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
-		};
-		5F2CD8891ABD9E5B001A4B27 /* Build configuration list for PBXNativeTarget "ASCIImage" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5F2CD88A1ABD9E5B001A4B27 /* Debug */,
-				5F2CD88B1ABD9E5B001A4B27 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
 		};
 		5FB8CA341AB98DB30047ECF3 /* Build configuration list for PBXNativeTarget "ASCIImageQuickLook" */ = {
 			isa = XCConfigurationList;
